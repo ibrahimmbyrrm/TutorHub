@@ -7,15 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		80230CC129BA67BA00313B03 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80230CC029BA67BA00313B03 /* GoogleService-Info.plist */; };
+		80230CC429BA698300313B03 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 80230CC329BA698300313B03 /* FirebaseAuth */; };
+		80230CC629BA698300313B03 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 80230CC529BA698300313B03 /* FirebaseFirestore */; };
+		80230CC829BA698300313B03 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 80230CC729BA698300313B03 /* FirebaseStorage */; };
+		80230CCA29BA6C0600313B03 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230CC929BA6C0600313B03 /* LoginViewModel.swift */; };
+		80230CCC29BA752600313B03 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230CCB29BA752600313B03 /* Alerts.swift */; };
+		80230CCE29BA7B7600313B03 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230CCD29BA7B7600313B03 /* UploadViewController.swift */; };
+		80230CD029BA7B8100313B03 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230CCF29BA7B8100313B03 /* ProfileViewController.swift */; };
+		80230CD229BA875B00313B03 /* UploadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230CD129BA875B00313B03 /* UploadViewModel.swift */; };
 		803D0BF429B93C0200825503 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803D0BF329B93C0200825503 /* AppDelegate.swift */; };
 		803D0BF629B93C0200825503 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803D0BF529B93C0200825503 /* SceneDelegate.swift */; };
-		803D0BF829B93C0200825503 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803D0BF729B93C0200825503 /* ViewController.swift */; };
+		803D0BF829B93C0200825503 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803D0BF729B93C0200825503 /* LoginViewController.swift */; };
 		803D0BFB29B93C0200825503 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 803D0BF929B93C0200825503 /* Main.storyboard */; };
 		803D0BFD29B93C0300825503 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 803D0BFC29B93C0300825503 /* Assets.xcassets */; };
 		803D0C0029B93C0300825503 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 803D0BFE29B93C0300825503 /* LaunchScreen.storyboard */; };
 		803D0C0B29B93C0300825503 /* TutorHubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803D0C0A29B93C0300825503 /* TutorHubTests.swift */; };
 		803D0C1529B93C0300825503 /* TutorHubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803D0C1429B93C0300825503 /* TutorHubUITests.swift */; };
 		803D0C1729B93C0300825503 /* TutorHubUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803D0C1629B93C0300825503 /* TutorHubUITestsLaunchTests.swift */; };
+		803D0C2929B93C7600825503 /* AnnouncmentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803D0C2829B93C7600825503 /* AnnouncmentModel.swift */; };
+		803D0C2B29B945F900825503 /* AnnouncementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803D0C2A29B945F900825503 /* AnnouncementCell.swift */; };
+		803D0C2D29B946AD00825503 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803D0C2C29B946AD00825503 /* FeedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +48,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		80230CC029BA67BA00313B03 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		80230CC929BA6C0600313B03 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		80230CCB29BA752600313B03 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
+		80230CCD29BA7B7600313B03 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
+		80230CCF29BA7B8100313B03 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		80230CD129BA875B00313B03 /* UploadViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewModel.swift; sourceTree = "<group>"; };
 		803D0BF029B93C0200825503 /* TutorHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TutorHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		803D0BF329B93C0200825503 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		803D0BF529B93C0200825503 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		803D0BF729B93C0200825503 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		803D0BF729B93C0200825503 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		803D0BFA29B93C0200825503 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		803D0BFC29B93C0300825503 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		803D0BFF29B93C0300825503 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +67,9 @@
 		803D0C1029B93C0300825503 /* TutorHubUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TutorHubUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		803D0C1429B93C0300825503 /* TutorHubUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorHubUITests.swift; sourceTree = "<group>"; };
 		803D0C1629B93C0300825503 /* TutorHubUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorHubUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		803D0C2829B93C7600825503 /* AnnouncmentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncmentModel.swift; sourceTree = "<group>"; };
+		803D0C2A29B945F900825503 /* AnnouncementCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementCell.swift; sourceTree = "<group>"; };
+		803D0C2C29B946AD00825503 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +77,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80230CC429BA698300313B03 /* FirebaseAuth in Frameworks */,
+				80230CC629BA698300313B03 /* FirebaseFirestore in Frameworks */,
+				80230CC829BA698300313B03 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,13 +123,14 @@
 		803D0BF229B93C0200825503 /* TutorHub */ = {
 			isa = PBXGroup;
 			children = (
-				803D0BF329B93C0200825503 /* AppDelegate.swift */,
-				803D0BF529B93C0200825503 /* SceneDelegate.swift */,
-				803D0BF729B93C0200825503 /* ViewController.swift */,
+				803D0C2729B93C2400825503 /* Core */,
+				803D0C2629B93C1800825503 /* Protocols */,
+				803D0C2529B93C1500825503 /* ViewModel */,
+				803D0C2429B93C1200825503 /* View */,
+				803D0C2329B93C0F00825503 /* Model */,
 				803D0BF929B93C0200825503 /* Main.storyboard */,
-				803D0BFC29B93C0300825503 /* Assets.xcassets */,
 				803D0BFE29B93C0300825503 /* LaunchScreen.storyboard */,
-				803D0C0129B93C0300825503 /* Info.plist */,
+				80230CC029BA67BA00313B03 /* GoogleService-Info.plist */,
 			);
 			path = TutorHub;
 			sourceTree = "<group>";
@@ -127,6 +152,54 @@
 			path = TutorHubUITests;
 			sourceTree = "<group>";
 		};
+		803D0C2329B93C0F00825503 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				803D0C2829B93C7600825503 /* AnnouncmentModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		803D0C2429B93C1200825503 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				803D0BF729B93C0200825503 /* LoginViewController.swift */,
+				803D0C2C29B946AD00825503 /* FeedViewController.swift */,
+				80230CCD29BA7B7600313B03 /* UploadViewController.swift */,
+				80230CCF29BA7B8100313B03 /* ProfileViewController.swift */,
+				803D0C2A29B945F900825503 /* AnnouncementCell.swift */,
+				80230CCB29BA752600313B03 /* Alerts.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		803D0C2529B93C1500825503 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				80230CC929BA6C0600313B03 /* LoginViewModel.swift */,
+				80230CD129BA875B00313B03 /* UploadViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		803D0C2629B93C1800825503 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		803D0C2729B93C2400825503 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				803D0C0129B93C0300825503 /* Info.plist */,
+				803D0BFC29B93C0300825503 /* Assets.xcassets */,
+				803D0BF529B93C0200825503 /* SceneDelegate.swift */,
+				803D0BF329B93C0200825503 /* AppDelegate.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +216,11 @@
 			dependencies = (
 			);
 			name = TutorHub;
+			packageProductDependencies = (
+				80230CC329BA698300313B03 /* FirebaseAuth */,
+				80230CC529BA698300313B03 /* FirebaseFirestore */,
+				80230CC729BA698300313B03 /* FirebaseStorage */,
+			);
 			productName = TutorHub;
 			productReference = 803D0BF029B93C0200825503 /* TutorHub.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +293,9 @@
 				Base,
 			);
 			mainGroup = 803D0BE729B93C0200825503;
+			packageReferences = (
+				80230CC229BA698300313B03 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 803D0BF129B93C0200825503 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -234,6 +315,7 @@
 				803D0C0029B93C0300825503 /* LaunchScreen.storyboard in Resources */,
 				803D0BFD29B93C0300825503 /* Assets.xcassets in Resources */,
 				803D0BFB29B93C0200825503 /* Main.storyboard in Resources */,
+				80230CC129BA67BA00313B03 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +340,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				803D0BF829B93C0200825503 /* ViewController.swift in Sources */,
+				803D0C2B29B945F900825503 /* AnnouncementCell.swift in Sources */,
+				803D0C2929B93C7600825503 /* AnnouncmentModel.swift in Sources */,
+				80230CD029BA7B8100313B03 /* ProfileViewController.swift in Sources */,
+				80230CCC29BA752600313B03 /* Alerts.swift in Sources */,
+				803D0BF829B93C0200825503 /* LoginViewController.swift in Sources */,
+				80230CCE29BA7B7600313B03 /* UploadViewController.swift in Sources */,
 				803D0BF429B93C0200825503 /* AppDelegate.swift in Sources */,
+				803D0C2D29B946AD00825503 /* FeedViewController.swift in Sources */,
 				803D0BF629B93C0200825503 /* SceneDelegate.swift in Sources */,
+				80230CCA29BA6C0600313B03 /* LoginViewModel.swift in Sources */,
+				80230CD229BA875B00313B03 /* UploadViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,7 +529,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 936XSD7LYL;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TutorHub/Info.plist;
+				INFOPLIST_FILE = TutorHub/Core/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -467,7 +557,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 936XSD7LYL;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TutorHub/Info.plist;
+				INFOPLIST_FILE = TutorHub/Core/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -602,6 +692,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		80230CC229BA698300313B03 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		80230CC329BA698300313B03 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 80230CC229BA698300313B03 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		80230CC529BA698300313B03 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 80230CC229BA698300313B03 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		80230CC729BA698300313B03 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 80230CC229BA698300313B03 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 803D0BE829B93C0200825503 /* Project object */;
 }
