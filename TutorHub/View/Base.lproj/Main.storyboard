@@ -24,7 +24,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" red="0.39607840779999998" green="0.28627452250000002" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2083258" translatesAutoresizingMaskIntoConstraints="NO" id="hDx-XF-L5t">
                                 <rect key="frame" x="76" y="65" width="240" height="128"/>
@@ -101,19 +101,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Active Announcements" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7hF-53-6cg">
-                                <rect key="frame" x="31" y="59" width="331" height="30"/>
+                                <rect key="frame" x="31" y="93" width="326.66666666666669" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="byR-84-NtL"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="27"/>
-                                <color key="textColor" red="0.39607840779999998" green="0.28627452250000002" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" systemColor="linkColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="nfj-tR-3Zk">
-                                <rect key="frame" x="0.0" y="126" width="393" height="643"/>
+                                <rect key="frame" x="0.0" y="160" width="393" height="609"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="643" id="CCG-GQ-JdL"/>
+                                    <constraint firstAttribute="height" constant="609" id="CCG-GQ-JdL"/>
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="193" id="F25-6C-pDM" customClass="AnnouncementCell" customModule="TutorHub" customModuleProvider="target">
@@ -269,7 +269,7 @@
                                                 <constraint firstItem="1DV-AZ-Hia" firstAttribute="top" secondItem="j27-JE-DdH" secondAttribute="bottom" constant="4" id="xjH-ZX-LtZ"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.39607840779999998" green="0.28627452250000002" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" systemColor="linkColor"/>
                                         <connections>
                                             <outlet property="costLabel" destination="ngb-Ad-c5L" id="TRX-Uf-2tL"/>
                                             <outlet property="deleteButtonOutlet" destination="FaT-7F-4iz" id="f4r-sg-dRd"/>
@@ -283,29 +283,50 @@
                                 </prototypes>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="━━━━━━━━━━━━━━━━━━━━━" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eE5-Ne-sC7">
-                                <rect key="frame" x="9.6666666666666572" y="105" width="373.66666666666674" height="20.333333333333329"/>
+                                <rect key="frame" x="9.6666666666666572" y="131" width="373.66666666666674" height="20.333333333333343"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" red="0.39607840779999998" green="0.28627452250000002" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" systemColor="linkColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sHq-7z-Idi">
+                                <rect key="frame" x="295" y="50" width="82" height="35"/>
+                                <color key="backgroundColor" red="0.92156863209999995" green="0.3058823645" blue="0.24313727020000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="8Nd-Sz-rr7"/>
+                                    <constraint firstAttribute="width" constant="82" id="w00-so-1Xi"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Log out">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="logOutButtonClicked:" destination="CCu-MN-lUd" eventType="touchUpInside" id="CyP-z5-7dz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vZ7-bh-a5s"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="eE5-Ne-sC7" firstAttribute="leading" secondItem="vZ7-bh-a5s" secondAttribute="leading" constant="9.6666666666666572" id="A8q-JO-Crx"/>
                             <constraint firstItem="7hF-53-6cg" firstAttribute="leading" secondItem="vZ7-bh-a5s" secondAttribute="leading" constant="31" id="BAB-B9-SHF"/>
+                            <constraint firstItem="eE5-Ne-sC7" firstAttribute="centerX" secondItem="nfj-tR-3Zk" secondAttribute="centerX" id="Hlq-nj-gle"/>
+                            <constraint firstItem="nfj-tR-3Zk" firstAttribute="trailing" secondItem="vZ7-bh-a5s" secondAttribute="trailing" id="K0J-jy-fJ3"/>
                             <constraint firstAttribute="trailing" secondItem="nfj-tR-3Zk" secondAttribute="trailing" id="RdY-zr-wEe"/>
                             <constraint firstItem="nfj-tR-3Zk" firstAttribute="leading" secondItem="Cnj-fo-g19" secondAttribute="leading" id="Sht-k0-6rD"/>
-                            <constraint firstItem="7hF-53-6cg" firstAttribute="top" secondItem="vZ7-bh-a5s" secondAttribute="top" id="WkG-sB-BJi"/>
+                            <constraint firstItem="sHq-7z-Idi" firstAttribute="top" secondItem="Cnj-fo-g19" secondAttribute="top" constant="50" id="Sli-aR-46s"/>
+                            <constraint firstItem="7hF-53-6cg" firstAttribute="top" secondItem="vZ7-bh-a5s" secondAttribute="top" constant="34" id="WkG-sB-BJi"/>
+                            <constraint firstItem="nfj-tR-3Zk" firstAttribute="leading" secondItem="vZ7-bh-a5s" secondAttribute="leading" id="ZYd-0h-nb6"/>
                             <constraint firstItem="nfj-tR-3Zk" firstAttribute="bottom" secondItem="vZ7-bh-a5s" secondAttribute="bottom" id="Zpe-Au-s9y"/>
-                            <constraint firstItem="eE5-Ne-sC7" firstAttribute="top" secondItem="7hF-53-6cg" secondAttribute="bottom" constant="16" id="dC6-w9-sWR"/>
-                            <constraint firstItem="eE5-Ne-sC7" firstAttribute="centerX" secondItem="7hF-53-6cg" secondAttribute="centerX" id="nTo-6w-hxK"/>
-                            <constraint firstItem="eE5-Ne-sC7" firstAttribute="centerX" secondItem="nfj-tR-3Zk" secondAttribute="centerX" id="yZd-vt-6SM"/>
+                            <constraint firstItem="eE5-Ne-sC7" firstAttribute="top" secondItem="7hF-53-6cg" secondAttribute="bottom" constant="8" symbolic="YES" id="gJR-v8-RBw"/>
+                            <constraint firstItem="sHq-7z-Idi" firstAttribute="leading" secondItem="vZ7-bh-a5s" secondAttribute="leading" constant="295" id="iLh-yv-upF"/>
+                            <constraint firstItem="vZ7-bh-a5s" firstAttribute="trailing" secondItem="sHq-7z-Idi" secondAttribute="trailing" constant="16" id="oJh-FK-L2p"/>
+                            <constraint firstItem="eE5-Ne-sC7" firstAttribute="leading" secondItem="vZ7-bh-a5s" secondAttribute="leading" constant="9.6666666666666572" id="pUz-Pn-kb3"/>
+                            <constraint firstItem="7hF-53-6cg" firstAttribute="top" secondItem="sHq-7z-Idi" secondAttribute="bottom" constant="8" symbolic="YES" id="v3D-Jq-2Vs"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="person.fill" catalog="system" id="ecf-4s-Cry"/>
                     <connections>
                         <outlet property="tableView" destination="nfj-tR-3Zk" id="xYA-TH-xTM"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="toLogin" modalPresentationStyle="fullScreen" id="bvu-K7-L0P"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wMb-Mh-MKY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -327,7 +348,7 @@
                                     <constraint firstAttribute="width" constant="299" id="Rul-od-y3l"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="30"/>
-                                <color key="textColor" red="0.39607840779999998" green="0.28627452250000002" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" systemColor="linkColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="━━━━━━━━━━━━━━━━━━━━━━" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yai-W9-l6b">
@@ -337,7 +358,7 @@
                                     <constraint firstAttribute="width" constant="374" id="mmx-zZ-N5s"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" red="0.39607840779999998" green="0.28627452250000002" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" systemColor="linkColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ObX-0Q-3CB">
@@ -372,8 +393,8 @@
                                     <constraint firstAttribute="width" constant="177" id="FT5-nU-25Y"/>
                                     <constraint firstAttribute="height" constant="28" id="kQH-xx-RZe"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="25"/>
-                                <color key="textColor" red="0.39607840779999998" green="0.28627452250000002" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="23"/>
+                                <color key="textColor" systemColor="linkColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your city and district like Istanbul/Fatih" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VNc-wl-hJt">
@@ -402,8 +423,8 @@
                                     <constraint firstAttribute="width" constant="202" id="TEQ-Gt-V3l"/>
                                     <constraint firstAttribute="height" constant="28" id="stT-EG-Bua"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="25"/>
-                                <color key="textColor" red="0.39607840779999998" green="0.28627452250000002" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="23"/>
+                                <color key="textColor" systemColor="linkColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RYh-xD-IvQ">
@@ -412,8 +433,8 @@
                                     <constraint firstAttribute="height" constant="28" id="9Xc-Ir-4vi"/>
                                     <constraint firstAttribute="width" constant="137" id="jAI-AM-RQF"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="25"/>
-                                <color key="textColor" red="0.39607840779999998" green="0.28627452250000002" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="23"/>
+                                <color key="textColor" systemColor="linkColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KiH-sg-K1p">
@@ -442,8 +463,8 @@
                                     <constraint firstAttribute="height" constant="28" id="D6D-JI-Ds6"/>
                                     <constraint firstAttribute="width" constant="158" id="N6j-p3-7bf"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="25"/>
-                                <color key="textColor" red="0.39607840779999998" green="0.28627452250000002" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="23"/>
+                                <color key="textColor" systemColor="linkColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYf-fD-is9">
@@ -475,7 +496,7 @@
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5gC-lD-Fy6"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.094117648900000003" green="0.094117648900000003" blue="0.1176470518" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="E8v-Yd-dwc" firstAttribute="top" secondItem="KUS-Sv-kSN" secondAttribute="bottom" constant="8" symbolic="YES" id="1rr-c4-ngM"/>
                             <constraint firstItem="yai-W9-l6b" firstAttribute="leading" secondItem="5gC-lD-Fy6" secondAttribute="leading" constant="9" id="4ZN-Wl-Npg"/>
@@ -557,7 +578,7 @@
                                     <constraint firstAttribute="width" constant="330" id="c0C-55-5QX"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="34"/>
-                                <color key="textColor" red="0.39607840779999998" green="0.28627452250000002" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" systemColor="linkColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="━━━━━━━━━━━━━━━━━━━━━━" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i8o-pj-RPe">
@@ -567,7 +588,7 @@
                                     <constraint firstAttribute="width" constant="374" id="aRh-XJ-w53"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" red="0.39607840779999998" green="0.28627452250000002" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" systemColor="linkColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YKS Matematik Özel Ders " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YAZ-SB-hnR">
@@ -705,7 +726,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kd1-Fx-4bm">
                                 <rect key="frame" x="9" y="716" width="161" height="46"/>
-                                <color key="backgroundColor" red="0.39607840779999998" green="0.28627452250000002" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="5zf-Sr-Pn3"/>
                                     <constraint firstAttribute="width" constant="161" id="kEa-vk-xQz"/>
@@ -722,7 +743,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5tB-4L-ofh">
                                 <rect key="frame" x="222" y="716" width="161" height="46"/>
-                                <color key="backgroundColor" red="0.39607840779999998" green="0.28627452250000002" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="161" id="7YV-ed-H01"/>
                                     <constraint firstAttribute="height" constant="46" id="TMs-gg-UCv"/>
@@ -838,7 +859,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="LGW-FV-ATC">
                                 <rect key="frame" x="0.0" y="126" width="393" height="643"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="193" id="wge-8A-dQk" customClass="AnnouncementCell" customModule="TutorHub" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="393" height="193"/>
@@ -977,7 +998,7 @@
                                                 <constraint firstItem="524-md-SYO" firstAttribute="top" secondItem="wup-ne-7V9" secondAttribute="bottom" constant="8" symbolic="YES" id="zHJ-RG-Agk"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.39607840779999998" green="0.28627452250000002" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" systemColor="linkColor"/>
                                         <connections>
                                             <outlet property="costLabel" destination="524-md-SYO" id="RGp-l1-fXw"/>
                                             <outlet property="locationLabel" destination="wup-ne-7V9" id="Z7l-lP-Rjo"/>
@@ -994,8 +1015,8 @@
                                     <constraint firstAttribute="width" constant="330" id="kD3-9E-76b"/>
                                     <constraint firstAttribute="height" constant="30" id="q43-4m-UVx"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="34"/>
-                                <color key="textColor" red="0.39607840779999998" green="0.28627452250000002" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="34"/>
+                                <color key="textColor" systemColor="linkColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="━━━━━━━━━━━━━━━━━━━━━━" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q0r-Z5-sZP">
@@ -1005,12 +1026,12 @@
                                     <constraint firstAttribute="width" constant="374" id="w37-AE-VT7"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" red="0.39607840779999998" green="0.28627452250000002" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="QlG-Nc-IMk"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="QlG-Nc-IMk" firstAttribute="trailing" secondItem="LGW-FV-ATC" secondAttribute="trailing" id="5sX-dk-Pld"/>
                             <constraint firstItem="QlG-Nc-IMk" firstAttribute="trailing" secondItem="q0r-Z5-sZP" secondAttribute="trailing" constant="10" id="6BY-tN-464"/>
@@ -1068,6 +1089,9 @@
         </namedColor>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

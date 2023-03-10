@@ -139,8 +139,6 @@
 				803D0C2529B93C1500825503 /* ViewModel */,
 				803D0C2429B93C1200825503 /* View */,
 				803D0C2329B93C0F00825503 /* Model */,
-				803D0BF929B93C0200825503 /* Main.storyboard */,
-				803D0BFE29B93C0300825503 /* LaunchScreen.storyboard */,
 				80230CC029BA67BA00313B03 /* GoogleService-Info.plist */,
 			);
 			path = TutorHub;
@@ -174,6 +172,8 @@
 		803D0C2429B93C1200825503 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				803D0BFE29B93C0300825503 /* LaunchScreen.storyboard */,
+				803D0BF929B93C0200825503 /* Main.storyboard */,
 				803D0BF729B93C0200825503 /* LoginViewController.swift */,
 				803D0C2C29B946AD00825503 /* FeedViewController.swift */,
 				80230CCF29BA7B8100313B03 /* ProfileViewController.swift */,

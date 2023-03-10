@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ProfileViewController: UIViewController, ProfileViewOutput {
     func saveData(values: [Announcement]) {
@@ -13,6 +14,16 @@ class ProfileViewController: UIViewController, ProfileViewOutput {
         self.tableView.reloadData()
     }
     
+    @IBAction func logOutButtonClicked(_ sender: Any) {
+        do {
+            try Auth.auth().signOut()
+            performSegue(withIdentifier: "toLogin", sender: nil)
+        }catch {
+            print(error.localizedDescription)
+        }
+        
+        
+    }
     private lazy var announcementList = [Announcement]()
     lazy var viewModel : ProfileViewModelOutput = ProfileViewModel()
     @IBOutlet weak var tableView: UITableView!

@@ -22,7 +22,6 @@ class UploadViewController: UIViewController {
     var selectedType : String?
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor(patternImage: UIImage(named: "bg")!)
         let tapToBlank = UITapGestureRecognizer(target: self, action: #selector(closeKeyboard))
         view.addGestureRecognizer(tapToBlank)
         educationTypePicker.delegate = self
