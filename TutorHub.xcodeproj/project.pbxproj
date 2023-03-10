@@ -30,9 +30,8 @@
 		803D0C2D29B946AD00825503 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803D0C2C29B946AD00825503 /* FeedViewController.swift */; };
 		80CA0F8329BB0D03005FCE0C /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CA0F8229BB0D03005FCE0C /* FeedViewModel.swift */; };
 		80CA0F8629BB10B5005FCE0C /* FirebaseDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CA0F8529BB10B5005FCE0C /* FirebaseDataManager.swift */; };
-		80CA0F8829BB10FD005FCE0C /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CA0F8729BB10FD005FCE0C /* FirebaseService.swift */; };
-		80CA0F8A29BB1136005FCE0C /* FeedViewModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CA0F8929BB1136005FCE0C /* FeedViewModelOutput.swift */; };
-		80CA0F8C29BB1162005FCE0C /* FeedViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CA0F8B29BB1162005FCE0C /* FeedViewOutput.swift */; };
+		80CA0F9229BB21E6005FCE0C /* ProtocolRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CA0F9129BB21E6005FCE0C /* ProtocolRouter.swift */; };
+		80CA0F9429BB27F9005FCE0C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CA0F9329BB27F9005FCE0C /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,9 +76,8 @@
 		803D0C2C29B946AD00825503 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		80CA0F8229BB0D03005FCE0C /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		80CA0F8529BB10B5005FCE0C /* FirebaseDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseDataManager.swift; sourceTree = "<group>"; };
-		80CA0F8729BB10FD005FCE0C /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
-		80CA0F8929BB1136005FCE0C /* FeedViewModelOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModelOutput.swift; sourceTree = "<group>"; };
-		80CA0F8B29BB1162005FCE0C /* FeedViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewOutput.swift; sourceTree = "<group>"; };
+		80CA0F9129BB21E6005FCE0C /* ProtocolRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolRouter.swift; sourceTree = "<group>"; };
+		80CA0F9329BB27F9005FCE0C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +176,7 @@
 				803D0C2C29B946AD00825503 /* FeedViewController.swift */,
 				80230CCD29BA7B7600313B03 /* UploadViewController.swift */,
 				80230CCF29BA7B8100313B03 /* ProfileViewController.swift */,
+				80CA0F9329BB27F9005FCE0C /* DetailViewController.swift */,
 				803D0C2A29B945F900825503 /* AnnouncementCell.swift */,
 				80230CCB29BA752600313B03 /* Alerts.swift */,
 			);
@@ -197,9 +196,7 @@
 		803D0C2629B93C1800825503 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				80CA0F8729BB10FD005FCE0C /* FirebaseService.swift */,
-				80CA0F8929BB1136005FCE0C /* FeedViewModelOutput.swift */,
-				80CA0F8B29BB1162005FCE0C /* FeedViewOutput.swift */,
+				80CA0F9129BB21E6005FCE0C /* ProtocolRouter.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -363,20 +360,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80CA0F8C29BB1162005FCE0C /* FeedViewOutput.swift in Sources */,
 				80CA0F8629BB10B5005FCE0C /* FirebaseDataManager.swift in Sources */,
 				803D0C2B29B945F900825503 /* AnnouncementCell.swift in Sources */,
-				80CA0F8A29BB1136005FCE0C /* FeedViewModelOutput.swift in Sources */,
 				803D0C2929B93C7600825503 /* AnnouncmentModel.swift in Sources */,
 				80CA0F8329BB0D03005FCE0C /* FeedViewModel.swift in Sources */,
-				80CA0F8829BB10FD005FCE0C /* FirebaseService.swift in Sources */,
 				80230CD029BA7B8100313B03 /* ProfileViewController.swift in Sources */,
 				80230CCC29BA752600313B03 /* Alerts.swift in Sources */,
+				80CA0F9229BB21E6005FCE0C /* ProtocolRouter.swift in Sources */,
 				803D0BF829B93C0200825503 /* LoginViewController.swift in Sources */,
 				80230CCE29BA7B7600313B03 /* UploadViewController.swift in Sources */,
 				803D0BF429B93C0200825503 /* AppDelegate.swift in Sources */,
 				803D0C2D29B946AD00825503 /* FeedViewController.swift in Sources */,
 				803D0BF629B93C0200825503 /* SceneDelegate.swift in Sources */,
+				80CA0F9429BB27F9005FCE0C /* DetailViewController.swift in Sources */,
 				80230CCA29BA6C0600313B03 /* LoginViewModel.swift in Sources */,
 				80230CD229BA875B00313B03 /* UploadViewModel.swift in Sources */,
 			);

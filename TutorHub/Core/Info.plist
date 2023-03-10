@@ -4,7 +4,11 @@
 <dict>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
-		<key>UIApplicationSupportsMultipleScenes</key>
+        <key>LSApplicationQueriesSchemes</key>
+                   <array>
+                           <string>tel</string>
+                   </array>
+        <key>UIApplicationSupportsMultipleScenes</key>
 		<false/>
 		<key>UISceneConfigurations</key>
 		<dict>

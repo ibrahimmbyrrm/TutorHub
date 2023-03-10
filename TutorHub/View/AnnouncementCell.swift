@@ -14,6 +14,9 @@ class AnnouncementCell: UITableViewCell{
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var typeLabel: UILabel!
     @IBOutlet weak var tutorLabel: UILabel!
+    var goProtocol : GoButton?
+    var indexPath : IndexPath?
+    var Feed = FeedViewController()
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -23,6 +26,8 @@ class AnnouncementCell: UITableViewCell{
         self.layer.shadowOffset = CGSize(width: -1, height: 1)
         let borderColor: UIColor = .white
         self.layer.borderColor = borderColor.cgColor
+        
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -30,11 +35,9 @@ class AnnouncementCell: UITableViewCell{
 
         // Configure the view for the selected state
     }
-   
-    
-    
-    
+
     @IBAction func goButton(_ sender: Any) {
+        goProtocol?.goButtonClicked(indexPath: indexPath!)
     }
     
 }
