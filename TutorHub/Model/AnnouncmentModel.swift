@@ -8,6 +8,7 @@
 import Foundation
 
 class Announcement {
+    var documentID : String
     var title : String
     var name : String
     var location : String
@@ -18,7 +19,7 @@ class Announcement {
     var cost : String
     var announcer : String
     
-    init(title: String, name: String, location: String, type: String, address: String, description: String, phone: String, cost: String, announcer: String) {
+    init(title: String, name: String, location: String, type: String, address: String, description: String, phone: String, cost: String, announcer: String,documentID : String) {
         self.title = title
         self.name = name
         self.location = location
@@ -28,4 +29,5 @@ class Announcement {
         self.phone = phone
         self.cost = cost
         self.announcer = announcer
+        self.documentID = documentID
     }}

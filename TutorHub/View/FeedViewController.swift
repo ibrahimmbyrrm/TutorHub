@@ -22,8 +22,17 @@ class FeedViewController: UIViewController, FeedViewOutput {
         tableView.dataSource = self
         viewModel.setDelegate(output: self)
         viewModel.fetchData()
-        view.backgroundColor = .black
+        view.backgroundColor = UIColor(patternImage: UIImage(named: "bg")!)
         tableView.backgroundColor = UIColor(patternImage: UIImage(named: "bg")!)
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        NotificationCenter.default.addObserver(self, selector: #selector(veriYenile), name: NSNotification.Name(rawValue: "veriSilindi"), object: nil)
+        print("feede geçildi")
+    }
+    @objc func veriYenile() {
+        self.announcementArray.removeAll(keepingCapacity: false)
+        viewModel.fetchData()
+        self.tableView.reloadData()
     }
 
 }

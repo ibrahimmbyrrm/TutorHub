@@ -32,6 +32,7 @@
 		80CA0F8629BB10B5005FCE0C /* FirebaseDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CA0F8529BB10B5005FCE0C /* FirebaseDataManager.swift */; };
 		80CA0F9229BB21E6005FCE0C /* ProtocolRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CA0F9129BB21E6005FCE0C /* ProtocolRouter.swift */; };
 		80CA0F9429BB27F9005FCE0C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CA0F9329BB27F9005FCE0C /* DetailViewController.swift */; };
+		80CA0F9629BB7EAC005FCE0C /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CA0F9529BB7EAC005FCE0C /* ProfileViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		80CA0F8529BB10B5005FCE0C /* FirebaseDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseDataManager.swift; sourceTree = "<group>"; };
 		80CA0F9129BB21E6005FCE0C /* ProtocolRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolRouter.swift; sourceTree = "<group>"; };
 		80CA0F9329BB27F9005FCE0C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		80CA0F9529BB7EAC005FCE0C /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,8 +176,8 @@
 			children = (
 				803D0BF729B93C0200825503 /* LoginViewController.swift */,
 				803D0C2C29B946AD00825503 /* FeedViewController.swift */,
-				80230CCD29BA7B7600313B03 /* UploadViewController.swift */,
 				80230CCF29BA7B8100313B03 /* ProfileViewController.swift */,
+				80230CCD29BA7B7600313B03 /* UploadViewController.swift */,
 				80CA0F9329BB27F9005FCE0C /* DetailViewController.swift */,
 				803D0C2A29B945F900825503 /* AnnouncementCell.swift */,
 				80230CCB29BA752600313B03 /* Alerts.swift */,
@@ -189,6 +191,7 @@
 				80230CC929BA6C0600313B03 /* LoginViewModel.swift */,
 				80230CD129BA875B00313B03 /* UploadViewModel.swift */,
 				80CA0F8229BB0D03005FCE0C /* FeedViewModel.swift */,
+				80CA0F9529BB7EAC005FCE0C /* ProfileViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -374,6 +377,7 @@
 				803D0BF629B93C0200825503 /* SceneDelegate.swift in Sources */,
 				80CA0F9429BB27F9005FCE0C /* DetailViewController.swift in Sources */,
 				80230CCA29BA6C0600313B03 /* LoginViewModel.swift in Sources */,
+				80CA0F9629BB7EAC005FCE0C /* ProfileViewModel.swift in Sources */,
 				80230CD229BA875B00313B03 /* UploadViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

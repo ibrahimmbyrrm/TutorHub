@@ -23,25 +23,29 @@ class DetailViewController: UIViewController{
         super.viewDidLoad()
         setViews()
         setDetails(announcement: selected!)
+        print(selected?.phone)
     
     }
     
     //Arama
     @IBAction func callButtonClicked(_ sender: Any) {
-        guard let phoneURL = URL(string: "tel://\(selected!.phone)") else {
-            print("call error")
+        guard let number = selected?.phone else {return}
+        guard let url = URL(string: "tel:\(number)") else {
+            print("olmadı be")
             return}
-        let application : UIApplication = UIApplication.shared
-        if (application.canOpenURL(phoneURL)) {
-            application.open(phoneURL, options: [:], completionHandler: nil)
-        }else {
-            print("nono")
-        }
+        UIApplication.shared.open(url)
+        print("oldu")
         
     }
     
     
     @IBAction func messageButtonClicked(_ sender: Any) {
+        guard let number = selected?.phone else {return}
+        print(number)
+        guard let url = URL(string: "https://api.whatsapp.com/send?phone=\(number)&text=Invitation") else {return}
+        if UIApplication.shared.canOpenURL(url) {
+               UIApplication.shared.open(url, options: [:], completionHandler: nil)
+           }
     }
     @IBAction func backButtonClicked(_ sender: Any) {
         self.dismiss(animated: true)
@@ -50,7 +54,7 @@ class DetailViewController: UIViewController{
     func setDetails(announcement: Announcement) {
         print(announcement.name ?? "not found")
         phoneLabel.text = announcement.phone
-        costLabel.text = announcement.cost
+        costLabel.text = "\(announcement.cost)$"
         addressText.text = announcement.address
         descriptionText.text = announcement.description
         typeLabel.text = announcement.type
