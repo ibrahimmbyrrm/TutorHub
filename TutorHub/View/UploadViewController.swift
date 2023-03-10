@@ -36,12 +36,22 @@ class UploadViewController: UIViewController {
     @IBAction func publishButtonClicked(_ sender: Any) {
         
         if titleInput.text != "" && nameInput.text != "" && selectedType != "" && locationInput.text != "" && addressInput.text != "" && phoneInput.text != "" && descriptionInput.text != "" && costInput.text != "" {
-            viewModel.saveData(title: titleInput.text!, name: nameInput.text!, location: locationInput.text!, type: selectedType!, address: addressInput.text!, description: descriptionInput.text!, phone: phoneInput.text!, cost: costInput.text!)
-                viewModel.clearField(title: titleInput, name: nameInput, location: locationInput, address: addressInput, description: descriptionInput, phone: phoneInput, cost: costInput)
+            FirebaseDataManager().saveData(title: titleInput.text!, name: nameInput.text!, location: locationInput.text!, type: selectedType!, address: addressInput.text!, description: descriptionInput.text!, phone: phoneInput.text!, cost: costInput.text!)
+                clearTextFields()
                 tabBarController?.selectedIndex = 0
         }else {
             self.present(Alerts().alertBox(title: "Error", message: "Please enter all informations"), animated: true)
         }
+    }
+    func clearTextFields() {
+        titleInput.text = ""
+        phoneInput.text = ""
+        costInput.text = ""
+        nameInput.text = ""
+        selectedType = ""
+        descriptionInput.text = ""
+        addressInput.text = ""
+        locationInput.text = ""
     }
     
 }

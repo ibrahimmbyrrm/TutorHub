@@ -73,6 +73,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" red="0.39607840779999998" green="0.28627452250000002" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             </textField>
                         </subviews>
@@ -503,6 +504,7 @@
                                         <connections>
                                             <outlet property="costLabel" destination="524-md-SYO" id="RGp-l1-fXw"/>
                                             <outlet property="locationLabel" destination="wup-ne-7V9" id="Z7l-lP-Rjo"/>
+                                            <outlet property="titleLabel" destination="N8z-X2-4ME" id="Y3v-p3-LL3"/>
                                             <outlet property="tutorLabel" destination="inc-gC-C1a" id="d7l-NT-Jca"/>
                                             <outlet property="typeLabel" destination="Flr-3a-41d" id="6kK-Mq-l19"/>
                                         </connections>
@@ -531,7 +533,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="2Qm-8I-ff5">
             <objects>
-                <tabBarController id="dYD-lw-znP" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabbar" id="dYD-lw-znP" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mxu-xA-OoL">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

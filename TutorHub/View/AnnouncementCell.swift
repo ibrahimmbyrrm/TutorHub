@@ -7,8 +7,9 @@
 
 import UIKit
 
-class AnnouncementCell: UITableViewCell {
-
+class AnnouncementCell: UITableViewCell{
+   
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var costLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var typeLabel: UILabel!
@@ -29,6 +30,9 @@ class AnnouncementCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+   
+    
+    
     
     @IBAction func goButton(_ sender: Any) {
     }

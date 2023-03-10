@@ -16,8 +16,9 @@ class Announcement {
     var description : String
     var phone : String
     var cost : String
+    var announcer : String
     
-    init(title: String, name: String, location: String, type: String, address: String, description: String, phone: String, cost: String) {
+    init(title: String, name: String, location: String, type: String, address: String, description: String, phone: String, cost: String, announcer: String) {
         self.title = title
         self.name = name
         self.location = location
@@ -26,5 +27,5 @@ class Announcement {
         self.description = description
         self.phone = phone
         self.cost = cost
-    }
-}
+        self.announcer = announcer
+    }}
